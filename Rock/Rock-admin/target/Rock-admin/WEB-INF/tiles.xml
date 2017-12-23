@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- scenerio 1 -->
+
+	<definition name="baseTemplate" id="baseTemplate"
+		template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	<definition name="admin" id="admin" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/admin.jsp" />
+		<put-attribute name="title" type="string" value="Welcome Page" />
+	</definition>
+
+
+	<!-- This is for Welcome.jsp file for Hibernate and spring integration -->
+
+<!-- 	<definition name="welcome" id="welcome" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+
+	<definition name="resistrationpage" id="resistrationpage" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/resistrationpage.jsp" />
+	</definition>
+
+	<definition name="product" id="product" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/product.jsp" />
+	</definition>
+         -->
+
+</tiles-definitions>
