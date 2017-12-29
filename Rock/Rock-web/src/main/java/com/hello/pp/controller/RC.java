@@ -76,6 +76,7 @@ public String vaildResistrationMethod(@ModelAttribute("list")UserDto dto,Binding
 public String loginMethod(@ModelAttribute("list")UserDto dto,BindingResult result){
 	
 	System.out.println("This is RC page");
+	System.out.println("kush and dada");
 	
 	if(rs.saveServiceResistration(dto)){
 		validation.validate(dto, result);
