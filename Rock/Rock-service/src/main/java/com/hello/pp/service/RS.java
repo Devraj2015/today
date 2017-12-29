@@ -20,7 +20,7 @@ private RR rr;
 	
 public boolean  saveServiceResistration(UserDto dto)
 {
-	
+	System.out.println("dada rc changed....");
 	System.out.println("This is RS page");
 
 	 rr.saveResistration(dto);
